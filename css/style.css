@@ -1,0 +1,218 @@
+
+body {
+  font-family: 'Noto Kufi Arabic' !important;
+  overflow-x: hidden !important;
+}
+
+
+ #morph{
+  width: 54%;
+      object-fit: cover;
+      margin: 20px 10%;
+      animation:morph 3.5s linear infinite ;
+    }
+    
+    @keyframes morph {
+      0%,100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+      }
+      34%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+      }67%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+      }
+
+    } 
+/* nav */
+nav{
+position: fixed;
+top: 0;
+width: 100%;
+background: white;
+z-index: 999;
+height: 50px;
+}
+nav p a{
+text-decoration: none;
+color: black;
+}
+nav p a:hover{
+color: #000;
+}
+nav i{
+position: absolute;
+right: 0;
+top: 2px;
+font-size: 35px;
+cursor:pointer;
+color: black;
+}
+nav p{
+font-size: 32px;
+font-weight: 800;
+font-family: cursive;
+color: black;
+letter-spacing: 2px;
+padding: 5px;
+}
+nav li:nth-child(2){
+list-style: none;
+position: absolute;
+right: 53px;
+top: 8px;
+padding: 5px;
+margin-right: 95px;
+margin-left: 20px;
+}
+nav li:nth-child(3){
+list-style: none;
+position: absolute;
+right: 71px;
+top: 9px;
+padding: 5px;
+}
+nav li:nth-child(4){
+list-style: none;
+position: absolute;
+right: 0px;
+top: 8px;
+padding: 5px;
+}
+nav li{
+list-style: none;
+position: absolute;
+right: 231px;
+top: 8px;
+margin-right: 20px;
+padding: 5px;
+}
+nav li a{
+text-decoration: none;
+color: black;
+font-size: 16px;
+}
+nav li a:hover{
+color: black;
+}
+
+.open{
+right: 0;
+}
+aside {
+width: 30%;
+height: 300vh;
+background: rgba(54, 50, 50, 75%);
+position: fixed;
+z-index: 999;
+top: 0;
+right: -30%;
+transition: 2s;
+}
+aside span i{
+font-size: 40px;
+padding: 5px;
+}
+aside span i:hover{
+border-radius: 10%;
+color: white;
+}
+aside div{
+width: 100%; 
+height: 40px;
+margin-top: 30px;
+padding: 30px  0px 50px 0px;
+text-align: center;
+cursor:pointer;
+}
+aside div:hover{
+background: black;
+}
+/* end nav */
+
+
+
+
+
+.card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+img:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+.skills-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 30px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.skill-card h3 {
+  font-size: 22px;
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+.skill-card ul li i {
+  color: #4f46e5;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* animation float effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.skill-card {
+  animation: float 6s ease-in-out infinite;
+}
